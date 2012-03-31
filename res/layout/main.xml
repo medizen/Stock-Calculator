@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+android:id="@+id/widget49"
+android:layout_width="fill_parent"
+android:layout_height="fill_parent"
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads" 
+>
+<EditText
+android:id="@+id/txtsoldfor"
+android:hint="Sold For"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:width="150dp"
+android:textSize="18sp"
+android:numeric="decimal"
+android:layout_alignTop="@+id/txtresult"
+android:layout_alignRight="@+id/txtshares"
+>
+</EditText>
+<EditText
+android:id="@+id/txtresult"
+android:hint="Result"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:width="150dp"
+android:textSize="18sp"
+android:numeric="decimal"
+android:layout_below="@+id/txtpurchasedfor"
+android:layout_alignParentLeft="true"
+>
+</EditText>
+<EditText
+android:id="@+id/txtpurchasedfor"
+android:hint="Purchased For"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:width="150dp"
+android:textSize="18sp"
+android:numeric="decimal"
+android:layout_alignTop="@+id/calcbtn"
+android:layout_alignLeft="@+id/txtshares"
+>
+</EditText>
+<Button
+android:id="@+id/calcbtn"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:text="Calculate"
+android:layout_below="@+id/txtbuycommiss"
+android:layout_alignParentLeft="true"
+>
+</Button>
+
+<EditText
+    android:id="@+id/txtsellprice"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentRight="true"
+    android:layout_below="@+id/txtpurchaseprice"
+    android:numeric="decimal"
+    android:text="@string/number_0"
+    android:textSize="18sp"
+    android:width="150dp" >
+
+</EditText>
+
+<EditText
+    android:id="@+id/txtbuycommiss"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentRight="true"
+    android:layout_below="@+id/txtsellcommiss"
+    android:numeric="decimal"
+    android:text="@string/number_0"
+    android:textSize="16sp"
+    android:width="150dp" >
+
+</EditText>
+
+<EditText
+    android:id="@+id/txtsellcommiss"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentRight="true"
+    android:layout_below="@+id/txtsellprice"
+    android:numeric="decimal"
+    android:text="@string/number_0"
+    android:textSize="16sp"
+    android:width="150dp" >
+
+</EditText>
+
+<EditText
+    android:id="@+id/txtpurchaseprice"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentRight="true"
+    android:layout_below="@+id/txtshares"
+    android:numeric="decimal"
+    android:text="@string/number_0"
+    android:textSize="18sp"
+    android:width="150dp" >
+
+</EditText>
+
+<EditText
+    android:id="@+id/txtshares"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentRight="true"
+    android:layout_alignParentTop="true"
+    android:numeric="integer"
+    android:text="@string/number_0"
+    android:textSize="18sp"
+    android:width="150dp" >
+
+</EditText>
+
+<Button
+    android:id="@+id/resetbtn"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignBaseline="@+id/txtpurchasedfor"
+    android:layout_alignBottom="@+id/txtpurchasedfor"
+    android:layout_alignRight="@+id/txtresult"
+    android:text="Reset" />
+
+<TextView
+    android:id="@+id/textView1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignBaseline="@+id/txtshares"
+    android:layout_alignBottom="@+id/txtshares"
+    android:layout_alignParentLeft="true"
+    android:text="@string/shares"
+    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+<TextView
+    android:id="@+id/textView2"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignBaseline="@+id/txtpurchaseprice"
+    android:layout_alignBottom="@+id/txtpurchaseprice"
+    android:layout_alignParentLeft="true"
+    android:text="@string/purchaseprice"
+    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+<TextView
+    android:id="@+id/textView3"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignBaseline="@+id/txtsellprice"
+    android:layout_alignBottom="@+id/txtsellprice"
+    android:layout_alignParentLeft="true"
+    android:text="@string/sellprice"
+    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+<TextView
+    android:id="@+id/textView4"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignBaseline="@+id/txtsellcommiss"
+    android:layout_alignBottom="@+id/txtsellcommiss"
+    android:layout_alignParentLeft="true"
+    android:text="@string/buycommiss"
+    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+<TextView
+    android:id="@+id/textView5"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignBaseline="@+id/txtbuycommiss"
+    android:layout_alignBottom="@+id/txtbuycommiss"
+    android:layout_alignParentLeft="true"
+    android:text="@string/sellcommiss"
+    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+<RelativeLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+    <com.google.ads.AdView  
+      android:id="@+id/ad" 
+      android:layout_width="fill_parent" 
+      android:layout_height="wrap_content"
+      android:layout_alignParentBottom="true"
+      ads:backgroundColor="#000000"
+      ads:adUnitId="a14f6a2870a8fe7"
+      ads:primaryTextColor="#FFFFFF"
+      ads:secondaryTextColor="#CCCCCC"
+      ads:adSize="BANNER"
+    />
+</RelativeLayout>
+</RelativeLayout>

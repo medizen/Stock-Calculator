@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Stock Calculator</string>
+    <string name="shares">Shares</string>
+    <string name="sellprice">Sell Price</string>
+    <string name="purchaseprice">Purchase Price</string>
+    <string name="buycommiss">Buy Commission</string>
+	<string name="sellcommiss">Sell Commission</string>
+	<string name="number_0">0</string>
+</resources>
