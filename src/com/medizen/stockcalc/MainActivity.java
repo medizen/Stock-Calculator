@@ -7,7 +7,6 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
@@ -40,7 +39,7 @@ public class MainActivity extends Activity
     	setContentView(R.layout.main);
     	initControls();
     	 // Create the adView     
-    	AdView adView = new AdView(this, AdSize.BANNER, "a14f6a2870a8fe7");     
+    	AdView adView = new AdView(this, AdSize.BANNER, "a14f77813a0541b");     
     	// Lookup your RelativeLayoutLayout assuming it’s been given     
     	// the attribute android:id="@+id/ad"     
     	RelativeLayout layout = (RelativeLayout)findViewById(R.id.ad);     
